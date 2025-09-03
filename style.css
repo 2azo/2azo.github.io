@@ -54,6 +54,7 @@
   --onyx: hsl(240, 1%, 17%);
   --eerie-black1: hsl(240, 2%, 13%);
   --eerie-black2: hsl(240, 2%, 12%);
+  --new-dark-blue: hsl(240deg 75.64% 7.71%);
   --smoky-black: hsl(0, 0%, 7%);
   --white1: hsl(0, 0%, 100%);
   --white2: hsl(0, 0%, 98%);
@@ -157,7 +158,7 @@ main {
 
 .sidebar,
 article {
-  background: var(--eerie-black2);
+  background: var(--new-dark-blue);
   border: 1px solid var(--jet);
   border-radius: 20px;
   box-shadow: var(--shadow1);
