@@ -144,6 +144,7 @@ textarea {
 
 html {
   font-family: var(--ff-poppins);
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -1256,7 +1257,8 @@ textarea.form-input::-webkit-realizer {
   fill: var(--light-blue);
 }
 
-.icon path, .icon circle {
+.icon path,
+.icon circle {
   stroke: var(--light-blue);
 }
 
