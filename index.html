@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -133,15 +133,15 @@
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Resume</button>
             </li>
-            <li class="navbar-item">
+            <!-- <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-            <li class="navbar-item">
+            </li> -->
+            <!-- <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
-            <li class="navbar-item">
+            </li> -->
+            <!-- <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
+            </li> -->
           </ul>
         </nav>
 
@@ -153,13 +153,15 @@
           <section class="about-text">
             <p>
               I'm a full stack developer and machine learning engineer with a
-              background in web development, data science, and building solutions at the intersection of technology and business development. 
+              background in web development, data science, and building
+              solutions at the intersection of technology and business
+              development.
             </p>
             <p>
-              Since September 2024, I have been building dynamic, responsive websites
-              and e-commerce platforms for businesses in Germany, using modern
-              frameworks like React.js, Next.js, and SvelteKit—connecting them
-              to CMS platforms such as WordPress, Contao, and ModX.
+              Since September 2024, I have been building full stack websites,
+              web applications, and e-commerce platforms for businesses in
+              Germany, using modern frameworks like React.js, Next.js, and
+              SvelteKit.
             </p>
             <p>
               During my time with fischer group and the Fraunhofer Institute
@@ -353,8 +355,54 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Machine Learning</h4>
                   <p class="service-item-text">
-                    Building different models for classification, regression,
-                    and clustering.
+                    Building a local RAG application, using FastAPI, LangChain,
+                    and VectorDB.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <!-- <img
+                    src="https://i.postimg.cc/QtDphVK8/brain.png"
+                    alt="icon"
+                    width="40"
+                  /> -->
+
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                    width="50px"
+                    height="auto"
+                    class="icon"
+                  >
+                    <text
+                      x="16"
+                      y="23"
+                      text-anchor="middle"
+                      font-family="Georgia, 'Times New Roman', serif"
+                      font-size="18"
+                      font-weight="bold"
+                      letter-spacing="1"
+                      fill="var(--primary-color)"
+                      fill-opacity="0.82"
+                    >
+                      DE
+                    </text>
+                    <rect
+                      id="_Transparent_Rectangle"
+                      style="fill: none"
+                      width="32"
+                      height="32"
+                    />
+                  </svg>
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">German Language</h4>
+                  <p class="service-item-text">
+                    Preparing for the C1 German language exam.
                   </p>
                 </div>
               </li>
@@ -598,15 +646,26 @@
             <ol class="timeline-list">
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  Software Engineer - Martini Werbeagentur
+                  Full Stack Developer - Martini Werbeagentur
                 </h4>
-                <span>09/2024 - Present</span>
+                <span>10/2025 - Present</span>
                 <p class="timeline-text">
-                  Creating dynamic, responsive websites and e-commerce platforms
-                  for businesses in Germany, using frameworks like React.js,
-                  Next.js, and SvelteKit, as well as vanilla JavaScript/CSS, and
-                  integrating with various CMS including WordPress, Contao, and
-                  ModX.
+                  Development of full stack web applications (Next.js,
+                  SvelteKit) and e-commerce solutions including database
+                  integration, deployment and server management.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Frontend Developer - Martini Werbeagentur
+                </h4>
+                <span>09/2024 - 09/2025</span>
+                <p class="timeline-text">
+                  Building and customizing CMS-based websites (WordPress,
+                  Contao) using PHP, HTML, CSS, and JavaScript, as well as
+                  developing responsive web applications and user interfaces
+                  with modern frameworks (e.g., React, Svelte).
                 </p>
               </li>
 
@@ -714,7 +773,7 @@
             <h2 class="h2 article-title">Portfolio</h2>
           </header>
 
-          <!-- <section class="projects">
+          <section class="projects">
             <ul class="filter-list">
               <li class="filter-item">
                 <button class="active" data-filter-btn>All</button>
@@ -728,34 +787,36 @@
               <li class="filter-item">
                 <button data-filter-btn>Web Development</button>
               </li>
-            </ul> -->
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-select-value>Select Category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Web Design</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Web Development</button>
-              </li>
             </ul>
-          </div>
 
-          <!-- <ul class="project-list">
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select Category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Design</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
               <li
                 class="project-item active"
                 data-filter-item
@@ -962,8 +1023,8 @@
                   <p class="project-category">Web Development</p>
                 </a>
               </li>
-            </ul> -->
-          <!-- </section> -->
+            </ul>
+          </section>
         </article>
 
         <article class="blog" data-page="blog">
@@ -972,7 +1033,7 @@
           </header>
 
           <section class="blog-posts">
-            <!-- <ul class="blog-posts-list">
+            <ul class="blog-posts-list">
               <li class="blog-post-item">
                 <a href="#">
                   <figure class="blog-banner-box">
@@ -1151,7 +1212,7 @@
                   </div>
                 </a>
               </li>
-            </ul> -->
+            </ul>
           </section>
         </article>
 
@@ -1160,7 +1221,7 @@
             <h2 class="h2 article-title">Contact</h2>
           </header>
 
-          <!-- <section class="mapbox" data-mapbox>
+          <section class="mapbox" data-mapbox>
             <figure>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
@@ -1169,9 +1230,9 @@
                 loading="lazy"
               ></iframe>
             </figure>
-          </section> -->
+          </section>
 
-          <!-- <section class="contact-form">
+          <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
             <form action="#" class="form" data-form>
@@ -1207,7 +1268,7 @@
                 <span>Send Message</span>
               </button>
             </form>
-          </section> -->
+          </section>
         </article>
       </div>
     </main>
