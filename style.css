@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Google Sans Flex";
+  src: url("./assets/Google_Sans_Flex/GoogleSansFlex-VariableFont_GRAD,ROND,opsz,slnt,wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --bg-gradient-onyx: linear-gradient(
@@ -6,7 +13,8 @@
     hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
-  --bg-gradient-jet: linear-gradient(
+  --bg-gradient-jet:
+    linear-gradient(
       to bottom right,
       hsla(240, 1%, 18%, 0.251) 3%,
       hsla(240, 2%, 11%, 0) 100%
@@ -22,13 +30,15 @@
     hsl(200, 100%, 80%) 0%,
     hsla(180, 100%, 78%, 0) 50%
   );
-  --bg-gradient-yellow2: linear-gradient(
+  --bg-gradient-yellow2:
+    linear-gradient(
       135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
       hsla(35, 100%, 68%, 0) 59.86%
     ),
     hsl(240, 2%, 13%);
-  --bg-gradient-light-blue2: linear-gradient(
+  --bg-gradient-light-blue2:
+    linear-gradient(
       135deg,
       hsla(200, 100%, 80%, 0.251) 0%,
       hsla(180, 100%, 78%, 0) 59.86%
@@ -66,7 +76,7 @@
   --light-gray70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
-  --ff-poppins: "Poppins", sans-serif;
+  --ff-poppins: "Google Sans Flex", sans-serif;
 
   --fs1: 24px;
   --fs2: 18px;
@@ -109,12 +119,17 @@ li {
 }
 
 img,
-ion-icon,
 a,
 button,
 time,
 span {
   display: block;
+}
+
+.ionicon {
+  display: block;
+  width: 1em;
+  height: 1em;
 }
 
 button {
@@ -202,8 +217,9 @@ article {
   z-index: -1;
 }
 
-.icon-box ion-icon {
-  --ionicon-stroke-width: 35px;
+.icon-box .ionicon {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 article {
@@ -690,9 +706,6 @@ article.active {
 .modal-close-btn:focus {
   opacity: 1;
 }
-.modal-close-btn ion-icon {
-  --ionicon-stroke-width: 50px;
-}
 
 .modal-avatar-box {
   background: var(--bg-gradient-onyx);
@@ -1021,8 +1034,9 @@ article.active {
   opacity: 1;
 }
 
-.project-item-icon-box ion-icon {
-  --ionicon-stroke-width: 50px;
+.project-item-icon-box .ionicon {
+  width: 20px;
+  height: 20px;
 }
 
 .project-title,
@@ -1229,8 +1243,9 @@ textarea.form-input::-webkit-realizer {
   transition: var(--transition1);
 }
 
-.form-btn ion-icon {
-  font-size: 16px;
+.form-btn .ionicon {
+  width: 16px;
+  height: 16px;
 }
 .form-btn:hover {
   background: var(--bg-gradient-light-blue1);
@@ -1260,6 +1275,86 @@ textarea.form-input::-webkit-realizer {
 .icon path,
 .icon circle {
   stroke: var(--light-blue);
+}
+
+/*FOOTER*/
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px 90px;
+  color: var(--light-gray70);
+  font-size: var(--fs8);
+  font-family: var(--ff-poppins);
+}
+
+.site-footer a {
+  color: var(--light-gray70);
+  transition: color var(--transition1);
+}
+
+.site-footer a:hover {
+  color: var(--light-blue);
+}
+
+/*LEGAL PAGES*/
+
+.legal-main {
+  margin: 60px auto;
+  min-width: 259px;
+}
+
+.legal-page {
+  background: var(--new-dark-blue);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  box-shadow: var(--shadow1);
+  padding: 30px 20px;
+}
+
+.legal-content {
+  color: var(--light-gray);
+  font-size: var(--fs6);
+  font-weight: var(--fw300);
+  line-height: 1.8;
+}
+
+.legal-content h3 {
+  color: var(--white2);
+  font-size: var(--fs4);
+  font-weight: var(--fw500);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.legal-content p {
+  margin-bottom: 12px;
+}
+
+.legal-content a {
+  color: var(--light-blue);
+  display: inline;
+}
+
+.legal-content a:hover {
+  text-decoration: underline;
+}
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  color: var(--light-gray70);
+  font-size: var(--fs7);
+  font-family: var(--ff-poppins);
+  transition: color var(--transition1);
+}
+
+.legal-back:hover {
+  color: var(--light-blue);
 }
 
 /*MEDIA QUERIES*/
@@ -1353,7 +1448,7 @@ textarea.form-input::-webkit-realizer {
     font-size: var(--fs8);
   }
 
-  .info-more-btn ion-icon {
+  .info-more-btn .ionicon {
     display: none;
   }
 
@@ -1541,8 +1636,9 @@ textarea.form-input::-webkit-realizer {
     padding: 16px 20px;
   }
 
-  .form-btn ion-icon {
-    font-size: 18px;
+  .form-btn .ionicon {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -1636,6 +1732,10 @@ textarea.form-input::-webkit-realizer {
     margin-bottom: 60px;
   }
 
+  .site-footer {
+    padding-bottom: 24px;
+  }
+
   .main-content {
     position: relative;
     width: max-content;
@@ -1701,7 +1801,8 @@ textarea.form-input::-webkit-realizer {
     border: 5px solid var(--smoky-black);
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
-    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+    box-shadow:
+      inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
       inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
 
